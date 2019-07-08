@@ -11,14 +11,14 @@ pc_data_file_name = handle + '.pcdata'
 try:
     with open(pc_data_file_name, 'r') as pc:
     # read file
-        character = pc.readline()
-        print(character)
+        handle = pc.readline()
+        print(handle)
 
         max_hp = pc.readline()
-        print('max_hp: ' + max_hp)
+        print('max_hp: ' + (max_hp))
 
-        starting_hp = pc.readline()
-        print('starting hp: ' + starting_hp)
+        current_hp = pc.readline()
+        print('starting hp: ' + (current_hp))
 
     # show player current data
         
@@ -90,9 +90,9 @@ while go:
 
 with open(pc_data_file_name, 'w') as pc:
 
-    pc.write(character)
+    pc.write(handle + '\n')
 
-    pc.write(max_hp)
+    pc.write(max_hp + '\n')
 
-    pc.write(current_hp)
+    pc.write(str(current_hp))
     
