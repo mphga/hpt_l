@@ -22,7 +22,7 @@ while go:
         go = False
     # l resets current_hp to max
     elif hp_change == 'l':
-        print('current HP: ' + str(max_hp))
+        print('\ncurrent HP: ' + str(max_hp))
 
     # number indicates change go to calc    
     else:
@@ -30,15 +30,12 @@ while go:
         current_hp = int(current_hp) + int(hp_change)
 
         if current_hp <= int(max_hp) and current_hp >15:
-            print('current HP:' + str(current_hp))
+            print('\ncurrent HP:' + str(current_hp) + '\n')
 
         elif current_hp > int(max_hp):
-            print('current HP: ' + str(max_hp))
+            print('\ncurrent HP: ' + str(max_hp) + '\n')
 
         elif current_hp <=15:
-            print('Danger LOW HP!' + str(current_hp))
-
-
-
+            print('\nDanger LOW HP!' + str(current_hp) + '\n')
 
 
