@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import health_data_y as lib
+import lib
 
 pstats = lib.player_stats()
 
